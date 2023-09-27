@@ -12,6 +12,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  flutter_svg: ^2.0.7
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -20,3 +21,32 @@ dev_dependencies:
 
 flutter:
   uses-material-design: false
+
+
+  assets:
+    - assets/
+    - assets/icons/
+    - assets/illustration/
+
+
+  fonts:
+    - family: Gilroy
+      fonts:
+        - asset: assets/fonts/Gilroy-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Gilroy-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Gilroy-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Gilroy-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Gilroy-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Gilroy-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Gilroy-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Gilroy-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Gilroy-Black.ttf
+          weight: 900
