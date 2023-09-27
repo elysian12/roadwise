@@ -110,6 +110,7 @@ abstract class AppTextStyle {
     return _baseTextStyle.copyWith(
       fontSize: 18,
       fontWeight: AppFontWeight.urbanistSemiBold,
+      color: AppColors.primaryGreenColor,
     );
   }
 }

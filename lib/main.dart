@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:roadwise/common/theme/app_theme.dart';
+import 'package:roadwise/router/app_router.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+  final appRouter = AppRouter();
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'RoadWise',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.appTheme,
-      home: const Scaffold(),
+      routerConfig: appRouter.config(),
     );
   }
 }

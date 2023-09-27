@@ -20,7 +20,12 @@ abstract class AppAsset {
 
   /// Illustrations
   static const String illusSplash = 'assets/illustration/illus_splash.svg';
-  static const String illusWelcome2 = 'assets/illustration/illus_splash_1.svg';
+  static const String illusOnboardOne =
+      'assets/illustration/illus_onboard_one.svg';
+  static const String illusOnboardTwo =
+      'assets/illustration/illus_onboard_two.svg';
+  static const String illusOnboardThree =
+      'assets/illustration/illus_onboard_three.svg';
   static const String illusLogin = 'assets/illustration/illus_login.svg';
   static const String illusWallet = 'assets/illustration/illus_wallet.png';
   static const String illusBlocked = 'assets/illustration/illus_blocked.svg';

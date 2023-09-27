@@ -12,7 +12,7 @@ abstract class AppTheme {
     appBarTheme: AppBarTheme(
       elevation: 0,
       centerTitle: true,
-      backgroundColor: AppColors.primaryColor,
+      backgroundColor: Colors.transparent,
       titleTextStyle: AppTextStyle.subtitle1.copyWith(
         color: AppColors.secondaryColor,
         letterSpacing: 0.5,
