@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:roadwise/common/constants/app_colors.dart';
 import 'package:roadwise/common/extension/context_ext.dart';
 import 'package:roadwise/modules/onboarding/models/onboarding_model.dart';
+import 'package:roadwise/router/app_router.dart';
 
 @RoutePage()
 class OnBoardingScreen extends StatefulWidget {
@@ -139,6 +140,13 @@ class BottomButtons extends StatelessWidget {
             FloatingActionButton(
               backgroundColor: AppColors.primaryFontColor,
               onPressed: () {
+                if (currenIndex == 2) {
+                  context.router.pushAndPopUntil(
+                    const WelcomeRoute(),
+                    predicate: (route) => false,
+                  );
+                  return;
+                }
                 controller.animateToPage(currenIndex + 1,
                     duration: const Duration(milliseconds: 400),
                     curve: Curves.easeOut);

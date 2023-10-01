@@ -22,12 +22,14 @@ abstract class AppTheme {
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-          minimumSize: const Size(double.infinity, 56),
-          foregroundColor: AppColors.primaryFontColor,
-          backgroundColor: AppColors.primaryGreenColor,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(4),
-          )),
+        minimumSize: const Size(double.infinity, 56),
+        foregroundColor: AppColors.secondaryColor,
+        backgroundColor: AppColors.primaryFontColor,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(100),
+        ),
+        textStyle: AppTextStyle.button,
+      ),
     ),
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
@@ -42,11 +44,11 @@ abstract class AppTheme {
       style: OutlinedButton.styleFrom(
           minimumSize: const Size(double.infinity, 56),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.circular(100),
           ),
-          foregroundColor: AppColors.secondaryColor,
+          foregroundColor: AppColors.primaryGreenColor,
           side: const BorderSide(
-            color: AppColors.secondaryColor,
+            color: AppColors.primaryFontColor,
           )),
     ),
   );

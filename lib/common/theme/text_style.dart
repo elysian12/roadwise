@@ -106,8 +106,8 @@ abstract class AppTextStyle {
   static TextStyle get button {
     return _baseTextStyle.copyWith(
       fontSize: 18,
-      fontWeight: AppFontWeight.urbanistSemiBold,
-      color: AppColors.primaryGreenColor,
+      fontWeight: FontWeight.bold,
+      color: AppColors.secondaryColor,
     );
   }
 }

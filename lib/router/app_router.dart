@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:roadwise/modules/onboarding/onboarding_screen.dart';
+import 'package:roadwise/modules/onboarding/welcome_screen.dart';
 
 import '../modules/splash/splash_screen.dart';
 
@@ -15,6 +16,9 @@ class AppRouter extends _$AppRouter {
         ),
         AutoRoute(
           page: OnBoardingRoute.page,
+        ),
+        AutoRoute(
+          page: WelcomeRoute.page,
         ),
       ];
 }
