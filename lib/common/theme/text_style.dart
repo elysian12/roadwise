@@ -12,7 +12,6 @@ abstract class AppTextStyle {
   static TextStyle get headline1 {
     return _baseTextStyle.copyWith(
       fontSize: 32,
-      // color: Colors.white,
       fontWeight: AppFontWeight.urbanistSemiBold,
     );
   }
@@ -21,8 +20,6 @@ abstract class AppTextStyle {
     return _baseTextStyle.copyWith(
       fontSize: 28,
       fontWeight: AppFontWeight.urbanistMedium,
-      // color: Colors.black,
-      // height: 1.08,
     );
   }
 
@@ -142,7 +139,7 @@ extension DarkTextThemeExtension on TextStyle {
 
 extension FontFamily on TextStyle {
   TextStyle get urbanist {
-    return copyWith(fontFamily: 'Urbanist');
+    return copyWith(fontFamily: 'Gilroy');
   }
 }
 
