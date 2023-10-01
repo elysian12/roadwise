@@ -14,9 +14,9 @@ abstract class AppTheme {
       centerTitle: true,
       backgroundColor: Colors.transparent,
       titleTextStyle: AppTextStyle.subtitle1.copyWith(
-        color: AppColors.secondaryColor,
+        color: AppColors.primaryFontColor,
         letterSpacing: 0.5,
-        fontWeight: FontWeight.w600,
+        fontWeight: FontWeight.bold,
         fontSize: 18,
       ),
     ),

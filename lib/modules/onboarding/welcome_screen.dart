@@ -1,8 +1,10 @@
 import 'package:auto_route/annotations.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:roadwise/common/constants/app_assets.dart';
 import 'package:roadwise/common/extension/context_ext.dart';
+import 'package:roadwise/router/app_router.dart';
 
 @RoutePage()
 class WelcomeScreen extends StatelessWidget {
@@ -33,14 +35,14 @@ class WelcomeScreen extends StatelessWidget {
                 height: 80,
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () => context.router.push(const SignUpRoute()),
                 child: const Text('Create Account'),
               ),
               const SizedBox(
                 height: 23,
               ),
               OutlinedButton(
-                onPressed: () {},
+                onPressed: () => context.router.push(const SignInRoute()),
                 child: const Text('Sign In'),
               ),
             ],
