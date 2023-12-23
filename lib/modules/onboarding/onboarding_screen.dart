@@ -71,8 +71,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         Text(
                           model.title,
                           style: context.textTheme.headlineMedium!.copyWith(
-                            fontSize: 31,
-                            fontWeight: FontWeight.w700,
+                            fontSize: 28,
+                            fontWeight: FontWeight.w400,
                           ),
                         )
                       ],

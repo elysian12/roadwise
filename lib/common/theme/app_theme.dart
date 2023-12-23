@@ -9,6 +9,7 @@ abstract class AppTheme {
   static ThemeData appTheme = ThemeData.dark().copyWith(
     scaffoldBackgroundColor: AppColors.primaryColor,
     textTheme: _textTheme,
+    focusColor: AppColors.primaryGreenColor,
     appBarTheme: AppBarTheme(
       elevation: 0,
       centerTitle: true,

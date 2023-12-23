@@ -1,4 +1,3 @@
-import 'package:auto_route/annotations.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -7,9 +6,27 @@ import 'package:roadwise/common/extension/context_ext.dart';
 import 'package:roadwise/router/app_router.dart';
 
 @RoutePage()
-class WelcomeScreen extends StatelessWidget {
+class WelcomeScreen extends StatefulWidget {
   static const String routeName = '/WelcomeScreen-page';
   const WelcomeScreen({Key? key}) : super(key: key);
+
+  @override
+  State<WelcomeScreen> createState() => _WelcomeScreenState();
+}
+
+class _WelcomeScreenState extends State<WelcomeScreen>
+    with WidgetsBindingObserver {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {

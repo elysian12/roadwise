@@ -28,6 +28,10 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+    <string>Your precise location is used to show your position on the map, get directions, estimate travel times and improve search results</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Your precise location is used to show your position on the map, get directions, estimate travel times and improve search results</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

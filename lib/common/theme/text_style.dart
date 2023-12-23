@@ -4,7 +4,7 @@ import '../constants/app_colors.dart';
 
 abstract class AppTextStyle {
   static const TextStyle _baseTextStyle = TextStyle(
-    fontFamily: 'Gilroy',
+    // fontFamily: 'Gilroy',
     color: AppColors.primaryFontColor,
     fontWeight: FontWeight.w600,
   );

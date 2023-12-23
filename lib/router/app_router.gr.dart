@@ -21,6 +21,12 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const OnBoardingScreen(),
       );
     },
+    RequestLocationRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const RequestLocationScreen(),
+      );
+    },
     SignInRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -58,6 +64,20 @@ class OnBoardingRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'OnBoardingRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [RequestLocationScreen]
+class RequestLocationRoute extends PageRouteInfo<void> {
+  const RequestLocationRoute({List<PageRouteInfo>? children})
+      : super(
+          RequestLocationRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'RequestLocationRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }
